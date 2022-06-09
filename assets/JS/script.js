@@ -7,3 +7,20 @@ let quizObjects = [
         answer : "JavaScript"
     },
 ]
+
+// Pull elements from DOM
+
+let mainHead = document.querySelector('.main-head');
+
+/**
+ * First task
+ * Display user interface
+ */
+function displayQuestionChoices() {
+
+    alert("Page testing");
+}
+
+
+// Calling Function
+displayQuestionChoices()

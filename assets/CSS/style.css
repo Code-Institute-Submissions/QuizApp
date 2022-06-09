@@ -1,0 +1,33 @@
+body {
+    background-color: white;
+    font-family: "Raleway", sans-serif;
+    color: #445361;
+    text-align: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.quiz-main{
+    max-width: 300px;
+    margin: 50px auto;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+
+}
+
+#submit {
+    border: none;
+    outline: 0;
+    background-color: darkolivegreen;
+    color: white;
+    padding: 8px 30px;
+    font-family: sans-serif, "Raleway";
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+    cursor: pointer;
+}
+

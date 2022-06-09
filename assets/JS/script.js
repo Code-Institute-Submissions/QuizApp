@@ -33,8 +33,15 @@ function displayQuestionChoices() {
  * to find out if the answer submitted is correct or not
  */
 function submitResponse() {
-    submitButton.addEventListener('click', function () {
-        getUserResponse()
+    submitButton.addEventListener('click', function (event) {
+        event.preventDefault()
+        let userResponse = getUserResponse()
+        console.log('user selected option', userResponse);
+        if (userResponse === quizObjects[0].answer) {
+            alert('You have chosen the right answer!')
+        } else {
+            alert('Please select another option')
+        }
     })
 
 }
@@ -49,9 +56,10 @@ function getUserResponse() {
         }
 
     })
+    return userResponse
     console.log(userResponse);
 }
 
-// Calling Function
+// Calling Functions
 displayQuestionChoices()
 submitResponse()

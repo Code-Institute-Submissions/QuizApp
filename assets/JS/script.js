@@ -15,6 +15,8 @@ let secondLabel = document.querySelector('.secondLabel');
 let thirdLabel = document.querySelector('.thirdLabel');
 let submitButton = document.getElementById('submit');
 let response = document.querySelectorAll('.choices');
+let mark
+let result
 //console.log('responses are', response);
 /**
  * First task
@@ -39,8 +41,10 @@ function submitResponse() {
         console.log('user selected option', userResponse);
         if (userResponse === quizObjects[0].answer) {
             alert('You have chosen the right answer!')
+            incrementScore()
         } else {
             alert('Please select another option')
+            incrementWrongAnswer()
         }
     })
 
@@ -59,6 +63,24 @@ function getUserResponse() {
     return userResponse
     console.log(userResponse);
 }
+
+
+function incrementScore() {
+
+    let oldScore = parseInt(document.getElementById('score').innerText);
+    document.getElementById('score').innerText = ++oldScore;
+
+
+}
+/**
+ * Get the current tally of incorrect answers from the DOM and increment it by one
+ */
+function incrementWrongAnswer() {
+
+    let oldScore = parseInt(document.getElementById('incorrect').innerText);
+    document.getElementById('incorrect').innerText = ++oldScore;
+}
+
 
 // Calling Functions
 displayQuestionChoices()

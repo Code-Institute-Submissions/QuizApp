@@ -5,32 +5,22 @@ body {
     text-align: center;
 }
 
-/* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Raleway", sans-serif;
-    
-}*/
 
 .quiz-main {
     max-width: 600px;
     margin: 50px auto;
     border: 2px solid rgba(25, 245, 80, 0.2);
     border-color: orange;
-    
+
 
 }
 
 
 .choices {
-    /*max-width: 600px;
-    margin: 50px auto;
-    border: 2px solid rgba(0, 0, 0, 0.2); */
+   
     display: inline-block;
     margin-left: 3px;
     vertical-align: 0.25em;
-    
 
 }
 
@@ -51,10 +41,10 @@ ul {
     color: white;
     padding: 8px 30px;
     font-family: "Raleway", sans-serif;
-    
+
     font-size: 16px;
     font-weight: 100;
-	margin-top: 20px;
+    margin-top: 20px;
     cursor: pointer;
     background-color: darkgreen;
     color: white;
@@ -73,9 +63,10 @@ ul {
 }
 
 li label {
-    color: rgb(34,139,34);
+    color: rgb(34, 139, 34);
     font-weight: bold;
 }
+
 .score-area {
     margin: 5px auto;
     width: 60%;
@@ -85,13 +76,12 @@ li label {
 
 }
 
-.scores:hover
- {
+.scores:hover {
     display: inline-block;
     padding: 5px;
-    background-color: rgb(208,176,134);
+    background-color: rgb(208, 176, 134);
     color: rgb(139, 34, 69);
-    
+
 }
 
 

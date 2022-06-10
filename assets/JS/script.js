@@ -35,32 +35,32 @@ function displayQuestionChoices() {
  */
 function submitResponse() {
     submitButton.addEventListener('click', function (event) {
-        event.preventDefault()
-        let userResponse = getUserResponse()
+        event.preventDefault();
+        let userResponse = getUserResponse();
         console.log('user selected option', userResponse);
         if (userResponse === quizObjects[0].answer) {
-            alert('You have chosen the right answer!')
-            incrementScore()
+            alert('You have chosen the right answer!');
+            incrementScore();
         } else {
-            alert('Please select another option')
-            incrementWrongAnswer()
+            alert('Please select another option');
+            incrementWrongAnswer();
         }
-    })
+    });
 
 }
 
 function getUserResponse() {
-    let userResponse
+    let userResponse;
     response.forEach(function (choices) {
         //console.log(choices);
         if (choices.checked === true) {
-            userResponse = choices.id
+            userResponse = choices.id;
 
         }
 
-    })
-    return userResponse
-    console.log(userResponse);
+    });
+    return userResponse;
+    //console.log(userResponse);
 }
 
 
@@ -82,5 +82,5 @@ function incrementWrongAnswer() {
 
 
 // Calling Functions
-displayQuestionChoices()
-submitResponse()
+displayQuestionChoices();
+submitResponse();

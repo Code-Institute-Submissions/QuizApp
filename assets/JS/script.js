@@ -15,8 +15,7 @@ let secondLabel = document.querySelector('.secondLabel');
 let thirdLabel = document.querySelector('.thirdLabel');
 let submitButton = document.getElementById('submit');
 let response = document.querySelectorAll('.choices');
-let mark
-let result
+
 //console.log('responses are', response);
 /**
  * First task

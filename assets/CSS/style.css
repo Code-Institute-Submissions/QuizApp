@@ -9,25 +9,66 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+    
 }
 
 .quiz-main{
-    max-width: 500px;
+    max-width: 600px;
     margin: 50px auto;
     border: 2px solid rgba(0, 0, 0, 0.2);
+    border-color: orange;
 
 }
 
-#submit {
+
+
+#submit,
+#submit:hover {
     border: none;
     outline: 0;
-    background-color: darkolivegreen;
     color: white;
     padding: 8px 30px;
-    font-family: sans-serif, "Raleway";
+    font-family: "Raleway", sans-serif;
     font-size: 16px;
     font-weight: 500;
     margin-top: 20px;
     cursor: pointer;
+    background-color: darkgreen;
+    color: white;
+    position: relative;
+}
+
+
+.score-area {
+    margin: 5px auto;
+    width: 60%;
+    font-size: 1.2rem;
+}
+
+.scores:active,.scores:hover {
+    display: inline-block;
+    padding: 5px;
+    background-color: darkgreen;
+    color: white;
+    
+}
+
+
+@media (max-width: 414px) {
+    .controls-area {
+        width: 100%;
+    }
+
+.score-area {
+    width: 100%;
+}
+
+.scores {
+    margin: 0.5em auto;
+    display: block;
+    padding: 5px;
+}
+
 }
 
